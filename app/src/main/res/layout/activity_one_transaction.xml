@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:id="@+id/tl_onetrans"
+    tools:context="com.example.ahuja.expensemanager.one_transaction">
+   <TableRow>
+
+        <TextView
+            android:id="@+id/tv_tableDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+        />
+        <TextView
+            android:textStyle="italic"
+            android:textColor="#000"
+            android:id="@+id/tv_tableDateSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yyyy/MM/dd"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/tv_tableDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:textStyle="italic"
+            android:textColor="#000"
+            android:id="@+id/tv_tableDescSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="Sample"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            android:id="@+id/tv_tableType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textColor="#000"
+            android:focusable="false"
+            android:id="@+id/tv_tableTypeSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cr/Db/Out"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/tv_tableAmnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amnt"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:textStyle="italic"
+            android:textColor="#000"
+            android:id="@+id/tv_tableAmntSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:drawableStart="@drawable/inr"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+
+            />
+    </TableRow>
+
+
+</TableLayout>

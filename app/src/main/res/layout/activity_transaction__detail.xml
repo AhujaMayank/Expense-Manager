@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.ahuja.expensemanager.Transaction_Detail">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="28dp"
+       android:text="Transactions"
+       android:textColor="#fff"
+       android:background="#b71c1c"
+       android:gravity="center_horizontal"
+       android:padding="15dp"
+       />
+    <LinearLayout
+        android:background="#4f5b62"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/back"
+            android:id="@+id/date_backwards"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="9dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_date"/>
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableStart="@drawable/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_forward"
+            android:visibility="invisible"
+            />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_rv_transaction"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="auto"
+        android:visibility="invisible"
+        android:forceHasOverlappingRendering="true"
+        app:elevation="10dp"
+        android:src="@drawable/add"
+        android:id="@+id/fab"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="330dp"
+        android:layout_marginBottom="20dp"
+        app:rippleColor="#ff9100"
+        />
+
+
+
+</LinearLayout>

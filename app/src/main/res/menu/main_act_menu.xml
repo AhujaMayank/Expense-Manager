@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+     <item
+         android:title="Details"
+         app:showAsAction="ifRoom"
+         android:id="@+id/act_main_details"
+         android:orderInCategory="2"/>
+     <item
+         android:id="@+id/act_main_add"
+         android:icon="@drawable/add"
+         app:showAsAction="always"
+         android:orderInCategory="1"
+         android:title="Add" />
+     <item
+          android:title="Daily Summary"
+          android:orderInCategory="3"
+          android:id="@+id/act_main_daywise"
+          app:showAsAction="never"/>
+     <item
+          android:orderInCategory="4"
+          app:showAsAction="never"
+          android:title="Weekly Summary"
+          android:id="@+id/act_main_weeksum"/>
+</menu>

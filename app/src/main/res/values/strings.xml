@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+    <string name="title_activity_insert__transaction">Insert_Transaction</string>
+    <string name="date">Date</string>
+    <string name="desc">Description</string>
+    <string name="type">Type</string>
+    <string name="amnt">Amount</string>
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="outstanding">Outstanding</string>
+    <string name="date_curr">Current Date</string>
+    <string name="date_format">yyyy.MM.DD</string>
+    <string name="total_ncome">Total Income</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="total_outstanding">Total Outstanding</string>
+    <string name="status">Status</string>
+    <string name="search_hint">Search Transaction</string>
+    <string name="transaction">Transaction</string>
+    <string name="add_another">Save &amp; Add Another</string>
+</resources>
+

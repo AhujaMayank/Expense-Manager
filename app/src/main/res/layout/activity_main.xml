@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.ahuja.expensemanager.MainActivity">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        app:cardBackgroundColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/daily_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/date"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/uneditable_inc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daily_date"
+                android:textSize="18sp"
+                android:text="@string/income"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/daily_inc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_below="@+id/daily_date"
+                android:layout_toRightOf="@+id/uneditable_inc"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="Inc"
+                android:drawableStart="@drawable/inr"
+                />
+            <TextView
+                android:id="@+id/uneditable_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daily_date"
+                android:layout_toRightOf="@+id/daily_inc"
+                android:textSize="18sp"
+                android:text="Spent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/daily_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_below="@+id/daily_date"
+                android:layout_toRightOf="@+id/uneditable_exp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="Exp"
+                android:drawableStart="@drawable/inr"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/budget"
+        android:id="@+id/tv_overView"
+        android:layout_height="wrap_content"
+        android:text="Daily Spends,"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:background="#263238"
+        android:layout_marginTop="1dp"
+        android:padding="7dp"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/pc_main_act"
+        android:background="#263238"
+        android:layout_below="@+id/tv_overView"
+
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pc_main_act"
+        android:id="@+id/tv_monthlyoverview"
+        android:layout_height="wrap_content"
+        android:text="Monthly Spends,"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:background="#263238"
+        android:layout_marginTop="1dp"
+        android:padding="7dp"/>
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/main_act_bar_month"
+            android:layout_below="@+id/tv_monthlyoverview"
+            android:background="#263238"/>
+
+
+        />
+    <LinearLayout
+        android:layout_below="@+id/card"
+        android:orientation="vertical"
+        android:id="@+id/budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#263238"
+        android:padding="7dp"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:text="Monthly Overview"/>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="16dp"
+             android:text="Spent"
+              android:layout_marginLeft="80dp"
+             android:textSize="20sp"
+             android:padding="10dp"
+             android:gravity="center_horizontal"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/tv_main_mspent"
+             android:layout_marginTop="10dp"
+             android:drawableStart="@drawable/inr"/>
+     </LinearLayout>
+         <LinearLayout
+             android:layout_marginLeft="80dp"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="20sp"
+                 android:text="Safe to spend "
+                 android:padding="5dp"
+                 android:layout_marginTop="3dp"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/tv_main_msafe"
+                 android:drawableStart="@drawable/inr"/>
+         </LinearLayout>
+        <ProgressBar
+            android:padding="15dp"
+            android:id="@+id/pb_main_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:indeterminate="false"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:contentDescription="Budget"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_budget_percentage"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

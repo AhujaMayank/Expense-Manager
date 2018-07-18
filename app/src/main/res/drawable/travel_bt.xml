@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"
+        android:state_pressed="true"
+        >
+        <bitmap android:src="@drawable/travel"/>
+        <shape android:shape="rectangle">
+            <padding android:bottom="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp"/>
+            <corners android:radius="40dp"/>
+            <solid android:color="#80D6FF"/>
+
+
+        </shape>
+    </item>
+    <item
+        android:state_checked="false"
+        android:state_pressed="false"
+        >
+        <bitmap android:src="@drawable/travel"/>
+        <shape android:shape="rectangle">
+            <padding android:bottom="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp"/>
+
+            <corners android:radius="40dp"/>
+            <solid android:color="#fff" >
+
+            </solid>
+
+        </shape>
+    </item>
+
+
+</selector>
